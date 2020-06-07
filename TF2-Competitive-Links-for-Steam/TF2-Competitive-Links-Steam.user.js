@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TF2 Competitive Links for Steam 
 // @namespace    https://github.com/l-Aad-l
-// @version      0.1.4
+// @version      0.1.5
 // @author       Aad
 // @description  Displays TF2 competitive related links on Steam
 // @include      http*://steamcommunity.com/id/*
@@ -30,7 +30,7 @@
 
     // Config to choose which sites you would like to see or not see
     var cfg = new MonkeyConfig({
-        title: 'TF2 Competitive Links Steam',
+        title: 'TF2CLS Options',
         menuCommand: true,
         params: {
             "rgl": {
@@ -299,8 +299,8 @@
 
 
     GM_addStyle(`
-    .profile_header_badgeinfo_badge_area {
-      width: auto !important;
-    }
-  `);
+        .profile_header_badgeinfo_badge_area {
+            width: auto !important;
+        }
+    `);
 })();
