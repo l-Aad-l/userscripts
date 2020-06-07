@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TF2 Competitive Links for Steam 
 // @namespace    https://github.com/l-Aad-l
-// @version      0.1.3
+// @version      0.1.4
 // @author       Aad
 // @description  Displays TF2 competitive related links on Steam
 // @include      http*://steamcommunity.com/id/*
@@ -15,8 +15,8 @@
 // @run-at       document-end
 // @homepageURL  https://github.com/l-Aad-l/userscripts
 // @supportURL   https://github.com/l-Aad-l/userscripts/issues
-// @downloadURL  https://raw.githubusercontent.com/l-Aad-l/userscripts/TF2-Competitive-Links-for-Steam/TF2-Competitive-Links-Steam.user.js  
-// @updateURL    https://raw.githubusercontent.com/l-Aad-l/userscripts/TF2-Competitive-Links-for-Steam/TF2-Competitive-Links-Steam.user.js
+// @downloadURL  https://raw.githubusercontent.com/l-Aad-l/userscripts/master/TF2-Competitive-Links-for-Steam/TF2-Competitive-Links-Steam.user.js
+// @updateURL    https://raw.githubusercontent.com/l-Aad-l/userscripts/master/TF2-Competitive-Links-for-Steam/TF2-Competitive-Links-Steam.user.js
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
 // @require      https://raw.githubusercontent.com/l-Aad-l/steam-profile-detailed-status/master/modules.min.js
 // @require      https://raw.github.com/odyniec/MonkeyConfig/master/monkeyconfig.js
