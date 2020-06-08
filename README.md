@@ -32,19 +32,19 @@ This repo contains all the usercripts I have created or forked & updated to fit 
 
    | Userscript Wiki                                 |   Direct<br>Install   |     Source<br>Code      | Greasy<br>Fork  | Open<br>UserJS  | Created    | Updated    |
    | ----------------------------------------------- | :-------------------: | :---------------------: | :-------------: | :-------------: | ---------- | ---------- |
-   | [TF2 Competitive Links for Steam ][tf2cls-wiki] | [Install][tf2cls-raw] | [Source][tf2cls-source] | WIP | WIP | 2019.01.15 | 2020.06.06 |
+   | [TF2 Community Links for Steam ][tf2cls-wiki] | [Install][tf2cls-raw] | [Source][tf2cls-source] | WIP | WIP | 2019.01.15 | 2020.06.06 |
 
 <!-- Wiki -->
 
-[tf2cls-wiki]: https://github.com/l-Aad-l/userscripts/wiki/TF2-Competitive-Links-for-Steam
+[tf2cls-wiki]: https://github.com/l-Aad-l/userscripts/wiki/TF2-Community-Links-for-Steam
 
 <!-- RAW -->
 
-[tf2cls-raw]: https://raw.githubusercontent.com/l-Aad-l/userscripts/master/TF2-Competitive-Links-for-Steam/TF2-Competitive-Links-Steam.user.js
+[tf2cls-raw]: https://raw.githubusercontent.com/l-Aad-l/userscripts/master/TF2-Community-Links-for-Steam/TF2-Community-Links-Steam.user.js
 
 <!-- Source code -->
 
-[tf2cls-source]: https://github.com/l-Aad-l/userscripts/blob/master/TF2-Competitive-Links-for-Steam/TF2-Competitive-Links-Steam.user.js
+[tf2cls-source]: https://github.com/l-Aad-l/userscripts/blob/master/TF2-Community-Links-for-Steam/TF2-Community-Links-Steam.user.js
 
 <!-- Greasyfork -->
 
@@ -68,4 +68,4 @@ Please report any userscript issues within this repository's [issue section](htt
 
 Copyright © 2020 by l-Aad-l.
 
-These userscripts are free software; you can redistribute and/or modify them under the terms of the GPL.
+This project is under the GPLv3 license. Unless otherwise stated in individual files.
