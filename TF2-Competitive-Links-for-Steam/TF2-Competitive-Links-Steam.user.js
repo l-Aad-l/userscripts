@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         TF2 Competitive Links for Steam 
 // @namespace    https://github.com/l-Aad-l
-// @version      0.1.5
+// @version      0.1.6
 // @author       Aad
 // @description  Displays TF2 competitive related links on Steam
+// @license      GPLv3 - http://www.gnu.org/licenses/gpl-3.0.txt
 // @include      http*://steamcommunity.com/id/*
 // @include      http*://steamcommunity.com/profiles/*
 // @include      http*://www.steamcommunity.com/id/*
@@ -32,17 +33,20 @@
     var cfg = new MonkeyConfig({
         title: 'TF2CLS Options',
         menuCommand: true,
+        onSave: function (values) {
+            location.reload();
+        },
         params: {
             "rgl": {
                 label: 'RGL.gg',
                 type: 'select',
-                choices: ['Highlander', 'NA Prolander', 'AU Prolander', 'Trad Sixes', 'NR Sixes'],
+                choices: ['Highlander', 'NA Prolander', 'AU Prolander', 'Trad Sixes', 'NR Sixes', 'Disable'],
                 default: 'Highlander'
             },
             "hlpugs": {
                 label: 'HLPugs.tf',
                 type: 'select',
-                choices: ['NA HLPugs', 'EU HLPugs'],
+                choices: ['NA HLPugs', 'EU HLPugs', 'Disable'],
                 default: 'NA HLPugs'
             },
             "steamrep": {
@@ -112,6 +116,11 @@
             },
             "petroltf": {
                 label: 'Petrol.tf',
+                type: 'checkbox',
+                default: true
+            },
+            "creatorstf": {
+                label: 'Creators.tf',
                 type: 'checkbox',
                 default: true
             },
@@ -232,6 +241,11 @@
             "name": "Petrol.tf",
             "status": true,
         },
+        "creatorstf": {
+            "link": `//bans.creators.tf/index.php?p=banlist&advSearch=${ steamID2 }&advType=steamid`,
+            "name": "Creators.tf",
+            "status": true,
+        },
         "logstf": {
             "link": `//logs.tf/profile/${ steamID }`,
             "name": " Logs.tf",
@@ -250,7 +264,7 @@
     };
 
     $.each(links, function (site, info) {
-        if (cfg.get(site) == false) {
+        if (cfg.get(site) == false || cfg.get(site) == "Disable") {
             info.status = false;
         }
 
@@ -299,8 +313,12 @@
 
 
     GM_addStyle(`
-        .profile_header_badgeinfo_badge_area {
-            width: auto !important;
+        .profile_in_game {
+          margin-bottom: 0px !important;
+        }
+
+        .profile_badges {
+          margin-bottom: 0px !important;
         }
     `);
 })();
