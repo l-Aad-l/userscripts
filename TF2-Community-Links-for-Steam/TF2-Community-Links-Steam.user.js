@@ -4,7 +4,7 @@
 // @version      0.1.7
 // @author       Aad
 // @description  Displays TF2 community related links on Steam
-// @license      GPLv3 - http://www.gnu.org/licenses/gpl-3.0.txt
+// @license      GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
 // @include      http*://steamcommunity.com/id/*
 // @include      http*://steamcommunity.com/profiles/*
 // @include      http*://www.steamcommunity.com/id/*
