@@ -27,7 +27,7 @@ This repo contains all the usercripts I have created or forked & updated to fit 
 
    - Learn more about the userscript by clicking on the named link. You will be taken to the specific wiki page.
    - Install a script directly from GitHub by clicking on the "Install" link in the table below.
-   - View the source code directly on GitHub by clickong on the "Source" link in the table below.
+   - View the source code directly on GitHub by clicking on the "Source" link in the table below.
    - Install a script from [GreasyFork](https://greasyfork.org/en/users/576570-l-aad-l) (GF) from the userscript site page **or** install the script from [OpenUserJS](https://openuserjs.org/users/Aad/scripts) (OU).<br><br>
 
    | Userscript Wiki                                 |   Direct<br>Install   |     Source<br>Code      | Greasy<br>Fork  | Open<br>UserJS  | Created    | Updated    |

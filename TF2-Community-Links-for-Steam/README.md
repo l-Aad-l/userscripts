@@ -7,6 +7,11 @@ A user script that adds various links to TF2 competitive leagues and TF2/Steam c
    * By default all sites are enabled.
    * Saving options will automatically refresh the page to display newly selected options.
 
+## Install Instructions
+   - Before installing the userscript, please ensure you have a script manager installed in your browser, a list can be found [here](https://github.com/l-Aad-l/userscripts/blob/master/README.md).
+   - Install a script directly from GitHub by clicking on the "Install" link in the table below.
+   - View the source code directly on GitHub by clickong on the "Source" link in the table below.
+   - Install a script from [GreasyFork](https://greasyfork.org/en/users/576570-l-aad-l) (GF) from the userscript site page **or** install the script from [OpenUserJS](https://openuserjs.org/users/Aad/scripts) (OU).
 
 |   Direct Install   |     Source Code      | GreasyFork  | OpenUserJS  |
 | :-------------------: | :---------------------: | :-------------: | :-------------: |
@@ -98,7 +103,7 @@ A user script that adds various links to TF2 competitive leagues and TF2/Steam c
 ![TF2CLS Padding](https://github.com/l-Aad-l/userscripts/raw/master/TF2-Community-Links-for-Steam/tf2cls_steam_padding_removed.png)
 
 ## Change Log
-### v0.1.6 - June 7, 2020
+### v0.1.7 - June 8, 2020
 * HTTPS support for RGL.gg
 * Renamed Competitive to Community
 ### v0.1.6 - June 7, 2020
