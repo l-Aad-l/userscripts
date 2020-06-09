@@ -32,7 +32,7 @@ This repo contains all the usercripts I have created or forked & updated to fit 
 
    | Userscript Wiki                                 |   Direct<br>Install   |     Source<br>Code      | Greasy<br>Fork  | Open<br>UserJS  | Created    | Updated    |
    | ----------------------------------------------- | :-------------------: | :---------------------: | :-------------: | :-------------: | ---------- | ---------- |
-   | [TF2 Community Links for Steam ][tf2cls-wiki] | [Install][tf2cls-raw] | [Source][tf2cls-source] | WIP | WIP | 2019.01.15 | 2020.06.06 |
+   | [TF2 Community Links for Steam ][tf2cls-wiki] | [Install][tf2cls-raw] | [Source][tf2cls-source] | WIP | [OU][tf2cls-ou] | 2019.01.15 | 2020.06.08 |
 
 <!-- Wiki -->
 
@@ -52,7 +52,7 @@ This repo contains all the usercripts I have created or forked & updated to fit 
 
 <!-- OpenUserJS -->
 
-<!-- [tf2cls-ou]: --> 
+[tf2cls-ou]: https://openuserjs.org/scripts/Aad/TF2_Community_Links_for_Steam
 
 ## Updating
 
