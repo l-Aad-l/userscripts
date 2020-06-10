@@ -103,6 +103,9 @@ A user script that adds various links to TF2 competitive leagues and TF2/Steam c
 ![TF2CLS Padding](https://github.com/l-Aad-l/userscripts/raw/master/TF2-Community-Links-for-Steam/tf2cls_steam_padding_removed.png)
 
 ## Change Log
+### v0.1.8 - June 10, 2020
+* Added Steam icon to userscript
+* Updated include regex to only run script on profile pages
 ### v0.1.7 - June 8, 2020
 * HTTPS support for RGL.gg
 * Renamed Competitive to Community

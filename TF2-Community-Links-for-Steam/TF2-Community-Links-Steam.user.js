@@ -1,14 +1,12 @@
 // ==UserScript==
 // @name         TF2 Community Links for Steam 
 // @namespace    https://github.com/l-Aad-l
-// @version      0.1.7
+// @version      0.1.8
 // @author       Aad
 // @description  Displays TF2 community related links on Steam
+// @icon         https://store.steampowered.com/favicon.ico
 // @license      GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
-// @include      http*://steamcommunity.com/id/*
-// @include      http*://steamcommunity.com/profiles/*
-// @include      http*://www.steamcommunity.com/id/*
-// @include      http*://www.steamcommunity.com/profiles/*
+// @include      /^https?:\/\/steamcommunity\.com\/(?:id|profiles)\/[\w-_]+\/?$/
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_addStyle
