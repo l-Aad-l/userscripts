@@ -77,7 +77,9 @@ A user script that adds various links to TF2 competitive leagues and TF2/Steam c
 ### TF2 Competitive Communtiy Sites
 [Logs.tf](https://logs.tf)
 
-[SizzlingStats](https://sizzlingstats.com)
+~~[SizzlingStats](https://sizzlingstats.com)~~
+
+[Trends.tf](https://trends.tf)
 
 [Demos.tf](https://demos.tf)
 
@@ -103,6 +105,11 @@ A user script that adds various links to TF2 competitive leagues and TF2/Steam c
 ![TF2CLS Padding](https://github.com/l-Aad-l/userscripts/raw/master/TF2-Community-Links-for-Steam/tf2cls_steam_padding_removed.png)
 
 ## Change Log
+### v0.1.9 - August 25, 2022
+* Removed Sizzlingstats(defunct)
+* Added Trends.tf
+* Removed HLPugs.tf
+* Removed deprecated RGL.gg regions
 ### v0.1.8 - June 10, 2020
 * Added Steam icon to userscript
 * Updated include regex to only run script on profile pages

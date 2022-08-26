@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TF2 Community Links for Steam 
 // @namespace    https://github.com/l-Aad-l
-// @version      0.1.8
+// @version      0.1.9
 // @author       Aad
 // @description  Displays TF2 community related links on Steam
 // @icon         https://store.steampowered.com/favicon.ico
@@ -38,14 +38,8 @@
             "rgl": {
                 label: 'RGL.gg',
                 type: 'select',
-                choices: ['Highlander', 'NA Prolander', 'AU Prolander', 'Trad Sixes', 'NR Sixes', 'Disable'],
+                choices: ['Highlander', 'NA Prolander', 'Trad Sixes', 'Disable'],
                 default: 'Highlander'
-            },
-            "hlpugs": {
-                label: 'HLPugs.tf',
-                type: 'select',
-                choices: ['NA HLPugs', 'EU HLPugs', 'Disable'],
-                default: 'NA HLPugs'
             },
             "steamrep": {
                 label: 'SteamRep',
@@ -102,6 +96,11 @@
                 type: 'checkbox',
                 default: true
             },
+            "fbtf": {
+                label: 'FBTF',
+                type: 'checkbox',
+                default: true
+            },
             "faceit": {
                 label: 'FACEIT',
                 type: 'checkbox',
@@ -127,8 +126,8 @@
                 type: 'checkbox',
                 default: true
             },
-            "sizzlingstats": {
-                label: 'SizzlingStats',
+            "trendstf": {
+                label: 'Trends.tf',
                 type: 'checkbox',
                 default: true
             },
@@ -215,8 +214,13 @@
             "status": true,
         },
         "rsp": {
-            "link": `//respawnleague.com/users?q=${ steamID }`,
+            "link": `//rsl.tf//users?q=${ steamID }`,
             "name": "Respawn League",
+            "status": true,
+        },
+        "fbtf": {
+            "link": `//fbtf.tf/users?q=${ steamID }`,
+            "name": "FBTF",
             "status": true,
         },
         "faceit": {
@@ -249,9 +253,9 @@
             "name": " Logs.tf",
             "status": true,
         },
-        "sizzlingstats": {
-            "link": `//sizzlingstats.com/player/${ steamID }`,
-            "name": "SizzlingStats",
+        "trendstf": {
+            "link": `//trends.tf/player/${ steamID }`,
+            "name": "Trends.tf",
             "status": true,
         },
         "demostf": {
@@ -269,18 +273,10 @@
         //if choice is the one selected, change site address
         if (cfg.get(site) == "NA Prolander") {
             info.link = `http://rgl.gg/Public/PlayerProfile.aspx?p=${ steamID }&r=1`;
-        } else if (cfg.get(site) == "AU Prolander") {
-            info.link = `http://rgl.gg/Public/PlayerProfile.aspx?p=${ steamID }&r=23`;
         } else if (cfg.get(site) == "Highlander") {
             info.link = `http://rgl.gg/Public/PlayerProfile.aspx?p=${ steamID }&r=24`;
         } else if (cfg.get(site) == "Trad Sixes") {
             info.link = `http://rgl.gg/Public/PlayerProfile.aspx?p=${ steamID }&r=40`;
-        } else if (cfg.get(site) == "NR Sixes") {
-            info.link = `http://rgl.gg/Public/PlayerProfile.aspx?p=${ steamID }&r=37`;
-        } else if (cfg.get(site) == "NA HLPugs") {
-            info.link = `//na.hlpugs.tf/player/${ steamID }`;
-        } else if (cfg.get(site) == "EU HLPugs") {
-            info.link = `//eu.hlpugs.tf/player/${ steamID }`;
         }
     });
 
@@ -303,7 +299,14 @@
     if (htmlstr) {
         if ($(".profile_item_links").length) {
             $(".profile_item_links").append(htmlstr + '<div style="clear: both;"></div>');
+            var res_content = $("responsive_count_link_area");
+            if(res_content) {
+                $('.responsive_count_link_area').prepend("<p>Steam64 " + steamID + "</p>");
+            } else {
+                $('.profile_item_links').prepend("<p>Steam64 " + steamID + "</p>");
+            }
         } else {
+            $('.profile_rightcol').prepend("<p>Steam64 " + steamID + "</p>");
             $(".profile_rightcol").append('<div class="profile_item_links">' + htmlstr + '</div>');
             $(".profile_rightcol").after('<div style="clear: both;"></div>');
         }
