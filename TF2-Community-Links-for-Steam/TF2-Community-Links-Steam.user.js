@@ -116,11 +116,6 @@
                 type: 'checkbox',
                 default: true
             },
-            "creatorstf": {
-                label: 'Creators.tf',
-                type: 'checkbox',
-                default: true
-            },
             "logstf": {
                 label: 'Logs.tf',
                 type: 'checkbox',
@@ -241,11 +236,6 @@
         "petroltf": {
             "link": `//petrol.tf/sb/index.php?p=banlist&advSearch=${ steamID2 }&advType=steamid`,
             "name": "Petrol.tf",
-            "status": true,
-        },
-        "creatorstf": {
-            "link": `//bans.creators.tf/index.php?p=banlist&advSearch=${ steamID2 }&advType=steamid`,
-            "name": "Creators.tf",
             "status": true,
         },
         "logstf": {

@@ -105,6 +105,8 @@ A user script that adds various links to TF2 competitive leagues and TF2/Steam c
 ![TF2CLS Padding](https://github.com/l-Aad-l/userscripts/raw/master/TF2-Community-Links-for-Steam/tf2cls_steam_padding_removed.png)
 
 ## Change Log
+### v0.2.0 - August 25, 2022
+* Removed Creators.tf
 ### v0.1.9 - August 25, 2022
 * Removed Sizzlingstats(defunct)
 * Added Trends.tf
