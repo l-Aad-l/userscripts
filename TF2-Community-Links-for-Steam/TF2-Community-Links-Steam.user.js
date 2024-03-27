@@ -214,7 +214,7 @@
             "status": true,
         },
         "fbtf": {
-            "link": `//fbtf.tf/users/steam_id/${ steamID }`,
+            "link": `//fbtf.tf/users?q=${ steamID }`,
             "name": "FBTF",
             "status": true,
         },
@@ -239,7 +239,7 @@
             "status": true,
         },
         "CustomLanderTF2": {
-            "link": `//cltf2.com/users/steam_id/${ steamID }`,
+            "link": `//www.cltf2.com/users/steam_id/${ steamID }`,
             "name": "CustomLanderTF2",
             "status": true,
         },
