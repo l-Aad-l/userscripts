@@ -116,6 +116,11 @@
                 type: 'checkbox',
                 default: true
             },
+            "CustomLanderTF2": {
+                label: 'CustomLanderTF2',
+                type: 'checkbox',
+                default: true
+            },
             "logstf": {
                 label: 'Logs.tf',
                 type: 'checkbox',
@@ -204,17 +209,12 @@
             "status": true,
         },
         "ozf": {
-            "link": `//warzone.ozfortress.com/users?q=${ steamID }`,
+            "link": `//ozfortress.com/users/steam_id/${ steamID }`,
             "name": "ozfortress",
             "status": true,
         },
-        "rsp": {
-            "link": `//rsl.tf//users?q=${ steamID }`,
-            "name": "Respawn League",
-            "status": true,
-        },
         "fbtf": {
-            "link": `//fbtf.tf/users?q=${ steamID }`,
+            "link": `//fbtf.tf/users/steam_id/${ steamID }`,
             "name": "FBTF",
             "status": true,
         },
@@ -236,6 +236,11 @@
         "petroltf": {
             "link": `//petrol.tf/sb/index.php?p=banlist&advSearch=${ steamID2 }&advType=steamid`,
             "name": "Petrol.tf",
+            "status": true,
+        },
+        "CustomLanderTF2": {
+            "link": `//cltf2.com/users/steam_id/${ steamID }`,
+            "name": "CustomLanderTF2",
             "status": true,
         },
         "logstf": {
